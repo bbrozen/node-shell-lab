@@ -1,17 +1,17 @@
-module.exports = function() {
-const ls = require('./ls');
+module.exports = function(done) {
+
     
     process.stdin.on('data', (data) => {
         const cmd = data.toString().trim();
         if(cmd === 'pwd'){
-                process.stdout.write(process.cwd());
+               done(process.cwd());
             }
         
             
         else{
-            process.stdout.write('you typed: ' + cmd);
+            done('you typed: ' + cmd);
         }
-        process.stdout.write('\nprompt > '); 
+         
     });
     
 };
