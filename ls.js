@@ -1,4 +1,3 @@
-
 module.exports = function(){
     const fs = require('fs');
     fs.readdir('./', 'utf8', (err,files) =>{

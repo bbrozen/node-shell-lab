@@ -11,11 +11,7 @@ const ls = require('./ls');
         else{
             process.stdout.write('you typed: ' + cmd);
         }
-        process.stdout.write('\nprompt > ');
-    
-        
-        
-        
+        process.stdout.write('\nprompt > '); 
     });
     
 };
